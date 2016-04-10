@@ -1,7 +1,7 @@
-SB HTML2Canvas Element Wrapper [![Build Status](https://travis-ci.org/space-beavers/sb-html2canvas-element.svg?branch=master](https://travis-ci.org/space-beavers/sb-html2canvas-element.svg?branch=master)
-=============
+# sb-html2canvas-element [![Build Status](https://travis-ci.org/space-beavers/sb-html2canvas-element.svg?branch=master)](https://travis-ci.org/space-beavers/sb-html2canvas-element)
 
-# sb-html2canvas-element
+Pixel Perfect [![Build Status](https://api.travis-ci.org/firebug/pixel-perfect.png)](https://travis-ci.org/firebug/pixel-perfect)
+=============
 
 Element wrapper for the html2canvas library.
 
