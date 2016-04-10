@@ -1,6 +1,6 @@
 # sb-html2canvas-element
 
-An element providing a starting point for your own reusable Polymer elements.
+Element wrapper for the html2canvas library.
 
 
 ## Dependencies
