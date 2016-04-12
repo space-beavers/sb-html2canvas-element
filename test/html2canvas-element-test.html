@@ -24,9 +24,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <!-- You can use the document as a place to set up your fixtures. -->
     <test-fixture id="sb-html2canvas-element-fixture">
       <template>
-        <sb-html2canvas-element>
-          <h2>sb-html2canvas-element</h2>
-        </sb-html2canvas-element>
+        <sb-html2canvas-element container="image-container" url="http://test.com/api" debug-mode="true"></sb-html2canvas-element>
       </template>
     </test-fixture>
 
@@ -39,31 +37,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           myEl = fixture('sb-html2canvas-element-fixture');
         });
 
-        test('defines the "author" property', function() {
-          assert.equal(myEl.author.name, 'Dimitri Glazkov');
-          assert.equal(myEl.author.image, 'http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');
+        test('defines the "url" property', function() {
+          assert.equal(myEl.url, 'http://test.com/api');
         });
 
-        test('says hello', function() {
-          assert.equal(myEl.sayHello(), 'sb-html2canvas-element says, Hello World!');
-
-          var greetings = myEl.sayHello('greetings Earthlings');
-          assert.equal(greetings, 'sb-html2canvas-element says, greetings Earthlings');
+        test('defines the "container" property', function() {
+          assert.equal(myEl.container, 'image-container');
         });
 
-        test('fires lasers', function(done) {
-          myEl.addEventListener('sb-html2canvas-element-lasers', function(event) {
-            assert.equal(event.detail.sound, 'Pew pew!');
-            done();
-          });
-          myEl.fireLasers();
+        test('defines the "debug-mode" property', function() {
+          assert.equal(myEl.debugMode, true);
         });
 
-        test('distributed children', function() {
-          var els = myEl.getContentChildren();
-          assert.equal(els.length, 1, 'one distributed node');
-          assert.equal(els[0], myEl.querySelector('h2'), 'content distributed correctly');
-        });
+        //TODO: Mock the container and generateImage function to stub this test out
+        // test('fires sb-html2canvas-element-created', function(done) {
+        //   var expectedImageUrl = 'http://cats.png';
+        //   myEl.addEventListener('sb-html2canvas-element-created', function(event) {
+        //     assert.equal(event.detail.imageUrl, expectedImageUrl);
+        //     done();
+        //   });
+        //   myEl.generateImage();
+        // });
 
       });
     </script>
