@@ -22,7 +22,7 @@ addons:
   sauce_connect: false
 script:
 - xvfb-run wct
-- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct -s 'default'; fi
+# - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct -s 'default'; fi
 notifications:
   slack:
     secure: vV7NUHHaHB0lkH4iMAlkBimnG1Ygpp/y+ifiEK8YVNwxQAg5bIuCUMWy4fbSlJkFy00N9SP9Y5NpKe7GB5Ie740/XYWB5YIjrmF7IFZNHT8QS/SW+eTsPs67TBkEqzj6GmqsThT3V5sP0dhXQcCMC8lB1tXkJndvlzcIwafUg15kFkwv6n5WSbWy4M5XQE18WITShYSWKlM7eeYzNVvGzA/gLPwTYfKp94kDkAl2MXSOFkDA1req08B+dz3W/5klVrCiCrySipKCCJ8M1Mzs8aXOepyLUdYoVkisqCNRbmGy48Uf0g4CS627uhs6N6/OE+79mHgu287jd/b3Fdqai12BXb6w38ILYL4jDgm1IpVsxd1RXI8DbypgJ3B0vZebXZz+k1uwN/WtZJQV5MJcJFqfwFKzi8ZOUvaqFZWdHtnLcbrK785XSx8gQoaZiGXkOCoAiMYGZiQCkSJQDhoIqnWzAIwgj2ZyyylFa7AGCTEaTiCnU867AeB6YFMQUkcMk/zglwaPgQQU+4gH7ETUympLf2J9ihcb+SWTNxv/Md0UjIeR/aF7dkIQsWOb5UR2VUMb8tOF1AWc/rM+AsSXcmd8Mcl04wuDimhRGvM3YS0l86sC9Kit4pgriX5Ycom6h8DHWpu8ELd8vRI1sm7tgdC6leDIcocEn8gQBe/p6WM=
