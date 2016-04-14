@@ -1,6 +1,6 @@
-# sb-html2canvas-element [![Build Status](https://travis-ci.org/space-beavers/sb-html2canvas-element.svg?branch=master)](https://travis-ci.org/space-beavers/sb-html2canvas-element)
+# sb-meme-image-creator-element [![Build Status](https://travis-ci.org/space-beavers/sb-html2canvas-element.svg?branch=master)](https://travis-ci.org/space-beavers/sb-html2canvas-element)
 
-Element wrapper for the html2canvas library.
+Element wrapper for the sb-meme-generator-api
 
 ## Slack
 [Space Beavers on Slack](https://space-beavers.slack.com)

@@ -1,5 +1,5 @@
 {
-  "name": "sb-html2canvas-element",
+  "name": "sb-meme-image-creator",
   "version": "1.0.0",
   "authors": [
     "Mike Buckley <mikebuckley.canada@gmail.com>",
@@ -7,13 +7,13 @@
     "Kit Brown-Watts <>",
     "Chris Saunders <>"
   ],
-  "description": "Element wrapper for the html2canvas library.",
+  "description": "Element wrapper for the sb-meme-generator-api.",
   "keywords": [
     "space beavers",
     "html2canvas",
     "polymer"
   ],
-  "main": "sb-html2canvas-element.html",
+  "main": "sb-meme-image-creator.html",
   "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/space-beavers/sb-html2canvas-element",
   "ignore": [
@@ -22,7 +22,6 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.2.0",
-    "html2canvas": "~0.4.1",
     "iron-ajax": "~1.2.0"
   },
   "devDependencies": {

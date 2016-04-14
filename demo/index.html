@@ -7,24 +7,26 @@
     <title>sb-html2canvas-element Demo</title>
     <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="../../paper-button/paper-button.html">
-    <link rel="import" href="../sb-html2canvas-element.html">
+    <link rel="import" href="../sb-meme-image-creator.html">
   </head>
   <body unresolved>
 
-    <p>An example of <code>&lt;sb-html2canvas-element&gt;</code>:</p>
+    <p>An example of <code>&lt;sb-meme-image-creator&gt;</code>:</p>
+    <p>
+      <ul>
+        <li>Image Url: http://i.imgflip.com/1bij.jpg</li>
+        <li>Header Text: Top Line</li>
+        <li>Footer Text: Bottom Line</li>
+      </ul>
+    </p>
 
-    <div id="demo-container">
-      <h1>Space Beavers</h1>
-      <img src="bieberbeaver.jpg" width="385" height="240" />
-    </div>
-
-    <sb-html2canvas-element id="imageGenerator" container="demo-container"></sb-html2canvas-element>
+    <sb-meme-image-creator id="imageGenerator" image-url="http://i.imgflip.com/1bij.jpg" header-text="Top Line" footer-text="Bottom Line"></sb-meme-image-creator>
 
     <paper-button id="demo-save-image" raised>Save Image</paper-button>
     <p>Download Link: <span id="download-link-container"></span></p>
 
     <script>
-      var seedElement = document.querySelector('sb-html2canvas-element');
+      var seedElement = document.querySelector('sb-meme-image-creator');
 
       document.querySelector('#demo-save-image').addEventListener('click', function() {
         // clear out download link container first
@@ -39,7 +41,7 @@
         seedElement.generateImage();
       });
 
-      document.addEventListener("sb-html2canvas-element-created", function(e) {
+      document.addEventListener("sb-meme-image-creator-created", function(e) {
         var downloadLink = document.createElement("a");
         downloadLink.setAttribute('href', e.detail.imageUrl);
         downloadLink.innerHTML = e.detail.imageUrl;

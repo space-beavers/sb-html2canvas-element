@@ -17,42 +17,52 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <script src="../../web-component-tester/browser.js"></script>
 
     <!-- Step 1: import the element to test -->
-    <link rel="import" href="../sb-html2canvas-element.html">
+    <link rel="import" href="../sb-meme-image-creator.html">
   </head>
   <body>
 
     <!-- You can use the document as a place to set up your fixtures. -->
-    <test-fixture id="sb-html2canvas-element-fixture">
+    <test-fixture id="sb-meme-image-creator-fixture">
       <template>
-        <sb-html2canvas-element container="image-container" url="http://test.com/api" debug-mode="true"></sb-html2canvas-element>
+        <sb-meme-image-creator
+          api-url="http://test.com/api"
+          image-url="http://i.imgflip.com/1bij.jpg"
+          header-text="Top Line"
+          footer-text="Bottom Line"></sb-meme-image-creator>
       </template>
     </test-fixture>
 
     <script>
-      suite('<sb-html2canvas-element>', function() {
+      suite('<sb-meme-image-creator>', function() {
 
         var myEl;
 
         setup(function() {
-          myEl = fixture('sb-html2canvas-element-fixture');
+          myEl = fixture('sb-meme-image-creator-fixture');
         });
 
-        test('defines the "url" property', function() {
-          assert.equal(myEl.url, 'http://test.com/api');
+        test('defines the "apiUrl" property', function() {
+          assert.equal(myEl.apiUrl, 'http://test.com/api');
         });
 
-        test('defines the "container" property', function() {
-          assert.equal(myEl.container, 'image-container');
+        test('defines the "imageUrl" property', function() {
+          assert.equal(myEl.imageUrl, 'http://i.imgflip.com/1bij.jpg');
         });
 
-        test('defines the "debug-mode" property', function() {
-          assert.equal(myEl.debugMode, true);
+        test('defines the "headerText" property', function() {
+          assert.equal(myEl.headerText, 'Top Line');
         });
+
+        test('defines the "footerText" property', function() {
+          assert.equal(myEl.footerText, 'Bottom Line');
+        });
+
+
 
         //TODO: Mock the container and generateImage function to stub this test out
-        // test('fires sb-html2canvas-element-created', function(done) {
+        // test('fires sb-meme-creator-element-created', function(done) {
         //   var expectedImageUrl = 'http://cats.png';
-        //   myEl.addEventListener('sb-html2canvas-element-created', function(event) {
+        //   myEl.addEventListener('sb-meme-creator-element-created', function(event) {
         //     assert.equal(event.detail.imageUrl, expectedImageUrl);
         //     done();
         //   });
