@@ -1,4 +1,4 @@
-# sb-meme-image-creator-element [![Build Status](https://travis-ci.org/space-beavers/sb-html2canvas-element.svg?branch=master)](https://travis-ci.org/space-beavers/sb-html2canvas-element)
+# sb-meme-image-creator [![Build Status](https://travis-ci.org/space-beavers/sb-meme-image-creator.svg?branch=master)](https://travis-ci.org/space-beavers/sb-meme-image-creator)
 
 Element wrapper for the sb-meme-generator-api
 
