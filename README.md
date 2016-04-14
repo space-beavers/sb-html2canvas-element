@@ -1,6 +1,6 @@
 # sb-meme-image-creator [![Build Status](https://travis-ci.org/space-beavers/sb-meme-image-creator.svg?branch=master)](https://travis-ci.org/space-beavers/sb-meme-image-creator)
 
-Element wrapper for the sb-meme-generator-api
+Element wrapper for the sb-meme-generator-api.
 
 ## Slack
 [Space Beavers on Slack](https://space-beavers.slack.com)
